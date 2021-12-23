@@ -21,4 +21,4 @@
 #
 
 # Inherit from OEM SOC-common
-$(call inherit-product, device/$(BOARD_VENDOR)/$(COMMON_SOC)-common/common.mk)
+$(call inherit-product, $(COMMON_PATH)/common.mk)
