@@ -16,11 +16,11 @@
 #
 # Only the below variable(s) need to be changed!
 #
-# Identifier for common folder
-COMMON_SOC := sm8250
-
 # Define hardware platform
 PRODUCT_PLATFORM := kona
+
+# Identifier for SoC folder
+COMMON_SOC := sm8250
 
 #
 #
@@ -47,7 +47,7 @@ PRODUCT_BRAND := $(BOARD_VENDOR)
 PRODUCT_MODEL := $(shell echo $(PRODUCT_BRAND) | tr  '[:lower:]' '[:upper:]')_$(PRODUCT_DEVICE)
 PRODUCT_MANUFACTURER := $(PRODUCT_BRAND)
 
-# Common path for SOC device trees
+# Common path for device trees
 COMMON_PATH := device/$(PRODUCT_BRAND)/$(COMMON_SOC)-common
 
 # Device path for OEM device tree
