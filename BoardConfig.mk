@@ -29,3 +29,14 @@ TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/$(BOARD_KERNEL_IMAGE_NAME)
 
 # TWRP Flags
 TW_SUPPORT_INPUT_1_2_HAPTICS := true
+
+#
+# For local builds only
+#
+# Custom TWRP Versioning
+ifneq ($(wildcard device/common/version-info/.),)
+    CUSTOM_TWRP_DEVICE_VERSION := 1
+endif
+#
+# end local build flags
+#
