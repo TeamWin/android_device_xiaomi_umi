@@ -27,9 +27,6 @@ BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/$(BOARD_KERNEL_IMAGE_NAME)
 
-# TWRP Flags
-TW_SUPPORT_INPUT_1_2_HAPTICS := true
-
 #
 # For local builds only
 #
